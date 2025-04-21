@@ -22,7 +22,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+#this is post method
 @app.post("/get_suggestion/")
 async def get_suggestion(data: PromptRequest):
     try:
